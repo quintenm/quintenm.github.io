@@ -1,10 +1,12 @@
 # Digital Autocue
-A  digital autocue for a fast one-way communication
+A  digital online autocue for a faster way to communicate
+
+It has a simple writer and reader side
 
 For use and support with
 Live interviews (for internet) or Presentations
 
-Version 1.1.1 alpha
+Version 1.2.4 alpha
 
 # Project
 * It's a simple side project, based on a simple idea
@@ -16,14 +18,13 @@ Version 1.1.1 alpha
 * Display live the entered text in Writer (Reader)
 * Work in rooms
 * Switch fast between Writer and Reader
-* Set somme customisation, such as Font-family, hightlighted color, background-color
+* Set somme customisation, such as Font-family, hightlighted color, background-color and reading style
 * Font scales with browser width
-* Save customisation and reset it, localStorage based
+* Save customisation or roomname and reset it, localStorage based
 * Keyboard trigger for scrolling or emergency call to writer
 * Upload txt-file with autocue text for a fast input.
 
 # What it will do in future
-* Customisation, such as reading scroll type
 * Auto insert comments from social media (It would be cool)
 
 # Somme side notes
@@ -46,7 +47,7 @@ Version 1.1.1 alpha
 
 # How to use it
 * Load webpage on serveral devices
-* A **room** will be created automatically, you can rename it, confirm by clicking ** join **
+* A **room** will be created automatically, you can rename it and save as your default, confirm by clicking ** join **
 * Be sure that all other devices joined the same room.
 * Click on **Writer** and insert your text, by pressing the `enter-key`
 * You can upload an txt-file via **Upload autocue** see the demofile as example.
@@ -58,15 +59,45 @@ OR
 # Extra
 ### Style
 * Change default background color;
+  * white
+  * black
+  * red
+  * green
+  * blue
+  * yellow
 * Change default font color
+  * white
+  * black
+  * red
+  * green
+  * blue
+  * yellow
 * Change default font family
-* Change default display style in Reader (currently disabled)
+  * serif
+  * sans-serif
+* Change default display style in Reader
+  * Stick scroll (default)
+  * Just scroll (classic)
+* Save your default Room name
 * Save or restore settings
 
 ### Controls
-- Keypress Previous slide `A`, `Q`, `F`, `Left arrow key`, `Up arrow key`
-- Keypress Next slide `E`, `D`, `J`, `Right arrow key`, `Down arrow key`, `Spacebar key`
-- Keypress Emergency `Return key`
+#### Writer
+1. Click on the text input field
+2. Type your text
+3. Hit `Return` to submit
+4. Type your next sentence
+
+##### Reader
+###### Stick Scroll (default)
+* Keypress Previous `A`, `Q`, `F`
+* Keypress Next `E`, `D`, `J`, `Spacebar`
+* Keypress Emergency `Return`
+
+###### Just Scroll (classic)
+* Start and Stop scrolling `Spacebar`
+* Normal Navigation
+* Keypress Emergency `Return`
 
 **Side note**: To use with a own local server and multiple separated devices, surf to the local ip-adress of th computer with the running server. *Example http://192.168.0.10:3000*
 
@@ -78,4 +109,4 @@ You can find a working demo
 - Emergency function on the Reader side, won't send to other devices
 
 ## Created by
-[quinten.mares.be](http://quinten.mares.be) &copy; 2016 - 2017
+[quinten.mares.be](http://quinten.mares.be) — [heroku Digital Autocue Demo](http://digitalautocue.herokuapp.com) &copy; 2016 - 2017
