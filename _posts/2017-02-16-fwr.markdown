@@ -1,0 +1,4 @@
+# Fun word replacer
+Replace words dynamically on different newsmedia
+
+# More comming soon ...
